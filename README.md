@@ -7,5 +7,5 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
-- Solution URL: [Github with code](https://github.com/konradbaczyk/Recipe-page)
-- Live site URL: [Live site](https://konradbaczyk.github.io/Recipe-page/)
+- Solution URL: [Github with code](https://github.com/konradbaczyk/Product-preview-card-component)
+- Live site URL: [Live site](https://konradbaczyk.github.io/Product-preview-card-component/)
