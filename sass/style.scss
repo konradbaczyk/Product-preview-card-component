@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--Dark-cyan: rgb(60, 128, 103);
+	--very-dark-cyan: rgb(36, 75, 60);
+	--Cream: rgb(242, 235, 227);
+
+	--Very-dark-blue: rgb(28, 35, 43);
+	--Dark-grayish-blue: rgb(108, 114, 137);
+	--White: rgb(255, 255, 255);
+}
+
+body {
+	min-height: 100svh;
+	padding: 2em 1em;
+	background-color: var(--Cream);
+}
+
+.card {
+	height: 100%;
+	width: 100%;
+	max-width: 30rem;
+	margin: 0 auto;
+	background-color: var(--White);
+	border-radius: 12px;
+	overflow: hidden;
+
+	&__img {
+		height: 15rem;
+		width: 100%;
+		background-image: url("../images/image-product-mobile.jpg");
+		background-size: cover;
+	}
+
+	&__content {
+		padding: 1.4em;
+	}
+
+	&__tag,
+	&__description,
+	&__past-price {
+		font-family: "Montserrat";
+		color: var(--Dark-grayish-blue);
+	}
+
+	&__tag {
+		margin-bottom: 1em;
+		font-size: 0.8rem;
+		text-transform: uppercase;
+		letter-spacing: 0.3em;
+	}
+
+	&__title {
+		margin-bottom: 0.5em;
+		font-family: "Fraunces";
+		font-size: 1.8rem;
+		font-weight: 700;
+		line-height: 100%;
+	}
+
+	&__description {
+		margin-bottom: 1.5em;
+		font-size: 0.9rem;
+		line-height: 150%;
+	}
+
+	&__prices {
+		margin-bottom: 1.5em;
+		display: flex;
+		align-items: center;
+	}
+
+	&__current-price {
+		font-family: "Fraunces";
+		font-size: 1.8rem;
+		font-weight: 700;
+		color: var(--Dark-cyan);
+	}
+
+	&__past-price {
+		margin-left: 1em;
+	}
+
+	&__btn {
+		width: 100%;
+		padding: 1em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--Dark-cyan);
+		border: transparent;
+		border-radius: 12px;
+		transition: background-color 0.3s;
+
+		&--text {
+			margin-left: 0.5em;
+			font-size: 1rem;
+			color: var(--White);
+		}
+
+		&:hover {
+			cursor: pointer;
+			background-color: var(--very-dark-cyan);
+		}
+	}
+}
+
+@media (min-width: 700px) {
+	.card {
+		max-width: 40rem;
+		display: flex;
+
+		&__img {
+			height: auto;
+			width: 50%;
+			background-image: url("../images/image-product-desktop.jpg");
+		}
+
+		&__content {
+			padding: 2em;
+			width: 50%;
+		}
+
+		&__title {
+			font-size: 2.3rem;
+		}
+
+		&__description {
+			font-size: 1rem;
+		}
+	}
+}
